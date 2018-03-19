@@ -1,0 +1,45 @@
+/* 
+
+Copyright 2018
+Brooks Jeremiah Wibberding
+All Rights Reserved
+
+*/
+
+$button_foreground_color: white;
+$button_foreground_color_hover: #005ce6;
+$button_background_color: #0066ff;
+$border: none;
+$side_padding: 15px;
+$border-radius: 5px;
+$font-weight: 100;
+
+$button_hover_shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+
+* {
+	font-family: sans-serif;
+	transition: all 0.1s ease-out;
+
+	button {
+		display: inline-flex;
+		background-color: $button_background_color;
+		color: $button_foreground_color;
+		font-size: 1em;
+		font-weight: $font-weight;
+		padding: 10px;
+		padding-left: $side_padding;
+		padding-right: $side_padding;
+		border: $border;
+		border-radius: $border-radius;
+	}
+
+	button:hover {
+		background-color: $button_foreground_color_hover;
+
+		-webkit-box-shadow: $button_hover_shadow;
+		-moz-box-shadow: $button_hover_shadow;
+		box-shadow: $button_hover_shadow;
+
+		cursor: pointer;
+	}
+}
