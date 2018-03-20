@@ -11,7 +11,7 @@ $button_foreground_color_hover: whitesmoke;
 $button_background_color: white;
 $border: 1px solid lightgrey;
 $side_padding: 15px;
-$border-radius: 5px;
+$border-radius: 0px;
 $font-weight: 100;
 
 $submit_color: #5269d3;
@@ -19,6 +19,12 @@ $warn_color: #d25151;
 
 $button_hover_shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
 $button_press_shadow: inset 0px 0px 12px -5px rgba(0,0,0,0.75);
+
+/*TABLES*/
+
+$light_grey_table_row: #e5e5e5;
+$table_row_padding: 15px;
+$table_row_border: 1px dashed #e5e5e5;
 
 * {
 	font-family: sans-serif;
@@ -72,5 +78,21 @@ $button_press_shadow: inset 0px 0px 12px -5px rgba(0,0,0,0.75);
 
 		color: $warn_color;
 		cursor: no-drop;
+	}
+
+	/*TABLES*/
+	table {
+		border: 1px solid #e5e5e5;
+		border-collapse: collapse;
+	}
+
+	td, th {
+		border: $table_row_border;
+		padding: $table_row_padding;
+		margin: 0px;
+	}
+
+	tr:nth-child(even) {
+	    background-color: $light_grey_table_row;
 	}
 }

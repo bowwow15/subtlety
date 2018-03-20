@@ -5,9 +5,11 @@ Brooks Jeremiah Wibberding
 All Rights Reserved
 
 */
+/*TABLES*/
 * {
   font-family: sans-serif;
-  transition: all 0.1s ease-out; }
+  transition: all 0.1s ease-out;
+  /*TABLES*/ }
   * button {
     display: inline-flex;
     background-color: white;
@@ -18,7 +20,7 @@ All Rights Reserved
     padding-left: 15px;
     padding-right: 15px;
     border: 1px solid lightgrey;
-    border-radius: 5px;
+    border-radius: 0px;
     outline: none !important;
     margin: 5px; }
   * button:hover {
@@ -42,5 +44,14 @@ All Rights Reserved
   * .warn:hover {
     color: #d25151;
     cursor: no-drop; }
+  * table {
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse; }
+  * td, * th {
+    border: 1px dashed #e5e5e5;
+    padding: 15px;
+    margin: 0px; }
+  * tr:nth-child(even) {
+    background-color: #e5e5e5; }
 
 /*# sourceMappingURL=subtlety.css.map */
