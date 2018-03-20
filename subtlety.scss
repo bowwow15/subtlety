@@ -6,15 +6,19 @@ All Rights Reserved
 
 */
 
-$button_foreground_color: white;
-$button_foreground_color_hover: #005ce6;
-$button_background_color: #0066ff;
-$border: none;
+$button_foreground_color: black;
+$button_foreground_color_hover: whitesmoke;
+$button_background_color: white;
+$border: 1px solid lightgrey;
 $side_padding: 15px;
 $border-radius: 5px;
 $font-weight: 100;
 
-$button_hover_shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+$submit_color: #5269d3;
+$warn_color: #d25151;
+
+$button_hover_shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+$button_press_shadow: inset 0px 0px 12px -5px rgba(0,0,0,0.75);
 
 * {
 	font-family: sans-serif;
@@ -32,6 +36,7 @@ $button_hover_shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
 		border: $border;
 		border-radius: $border-radius;
 		outline: none !important;
+		margin: 5px;
 	}
 
 	button:hover {
@@ -42,5 +47,30 @@ $button_hover_shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
 		box-shadow: $button_hover_shadow;
 
 		cursor: pointer;
+	}
+
+	button:active {
+		-webkit-box-shadow: $button_press_shadow;
+		-moz-box-shadow: $button_press_shadow;
+		box-shadow: $button_press_shadow;
+	}
+
+	.submit {
+		background-color: $submit_color;
+		color: $button_background_color;
+
+	} .submit:hover {
+
+		color: $submit_color;
+	}
+
+	.warn {
+		background-color: $warn_color;
+		color: $button_background_color;
+
+	} .warn:hover {
+
+		color: $warn_color;
+		cursor: no-drop;
 	}
 }

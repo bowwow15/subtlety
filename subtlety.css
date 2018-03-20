@@ -10,21 +10,37 @@ All Rights Reserved
   transition: all 0.1s ease-out; }
   * button {
     display: inline-flex;
-    background-color: #0066ff;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 1em;
     font-weight: 100;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border: none;
+    border: 1px solid lightgrey;
     border-radius: 5px;
-    outline: none !important; }
+    outline: none !important;
+    margin: 5px; }
   * button:hover {
-    background-color: #005ce6;
-    -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
     cursor: pointer; }
+  * button:active {
+    -webkit-box-shadow: inset 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 12px -5px rgba(0, 0, 0, 0.75); }
+  * .submit {
+    background-color: #5269d3;
+    color: white; }
+  * .submit:hover {
+    color: #5269d3; }
+  * .warn {
+    background-color: #d25151;
+    color: white; }
+  * .warn:hover {
+    color: #d25151;
+    cursor: no-drop; }
 
 /*# sourceMappingURL=subtlety.css.map */
