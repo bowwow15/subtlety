@@ -23,6 +23,8 @@ $button_press_shadow: inset 0px 0px 12px -5px rgba(0,0,0,0.75);
 /*TABLES*/
 
 $light_grey_table_row: #e5e5e5;
+$light_grey_table_row_hover: rgba(0, 0, 0, 0.1);
+
 $table_row_padding: 15px;
 $table_row_border: 1px dashed #e5e5e5;
 
@@ -87,9 +89,20 @@ $table_row_border: 1px dashed #e5e5e5;
 	}
 
 	td, th {
+		transition: none !important;
 		border: $table_row_border;
 		padding: $table_row_padding;
 		margin: 0px;
+	} td:hover {
+		background-color: $light_grey_table_row_hover;
+		cursor: zoom-in;
+	} td:active {
+		/*ZOOMS IN*/
+		position: relative;
+		position: absolute;
+		padding: $table_row_padding * 2;
+		font-size: 2em;
+		background-color: white !important;
 	}
 
 	tr:nth-child(even) {
