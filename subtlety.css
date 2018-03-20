@@ -9,7 +9,10 @@ All Rights Reserved
 * {
   font-family: sans-serif;
   transition: all 0.1s ease-out;
-  /*TABLES*/ }
+  /*BUTTONS*/
+  /*CONTAINERS*/
+  /*TABLES*/
+  /*IMAGES*/ }
   * button {
     display: inline-flex;
     background-color: white;
@@ -44,6 +47,8 @@ All Rights Reserved
   * .warn:hover {
     color: #d25151;
     cursor: no-drop; }
+  * .container {
+    width: 75%; }
   * table {
     border: 1px solid #e5e5e5;
     border-collapse: collapse; }
@@ -59,6 +64,9 @@ All Rights Reserved
     cursor: zoom-in; }
   * td:active {
     /*ZOOMS IN*/
+    -webkit-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
     transition: all 0.1s ease-in !important;
     z-index: 100;
     position: relative;
@@ -68,5 +76,9 @@ All Rights Reserved
     background-color: white !important; }
   * tr:nth-child(even) {
     background-color: #e5e5e5; }
+  * img {
+    display: inline-block;
+    width: inherit;
+    height: auto; }
 
 /*# sourceMappingURL=subtlety.css.map */

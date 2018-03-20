@@ -34,6 +34,7 @@ $table_row_border: 1px dashed #e5e5e5;
 	font-family: sans-serif;
 	transition: all 0.1s ease-out;
 
+	/*BUTTONS*/
 	button {
 		display: inline-flex;
 		background-color: $button_background_color;
@@ -84,6 +85,11 @@ $table_row_border: 1px dashed #e5e5e5;
 		cursor: no-drop;
 	}
 
+	/*CONTAINERS*/
+	.container {
+		width: 75%;
+	}
+
 	/*TABLES*/
 	table {
 		border: 1px solid #e5e5e5;
@@ -102,6 +108,10 @@ $table_row_border: 1px dashed #e5e5e5;
 		cursor: zoom-in;
 	} td:active {
 		/*ZOOMS IN*/
+		-webkit-box-shadow: $button_hover_shadow;
+		-moz-box-shadow: $button_hover_shadow;
+		box-shadow: $button_hover_shadow;
+
 		transition: $transition_in !important;
 		z-index: 100;
 		position: relative;
@@ -114,4 +124,12 @@ $table_row_border: 1px dashed #e5e5e5;
 	tr:nth-child(even) {
 	    background-color: $light_grey_table_row;
 	}
+
+	/*IMAGES*/
+	img {
+		display: inline-block;
+		width: inherit;
+		height: auto;
+	}
+
 }
