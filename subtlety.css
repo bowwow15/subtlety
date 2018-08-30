@@ -1,0 +1,85 @@
+/* 
+
+Copyright 2018
+Brooks Jeremiah Wibberding
+All Rights Reserved
+
+*/
+/*THIS RENDERS AS MINIFIED*/
+/*TABLES*/
+* {
+  font-family: sans-serif;
+  transition: all 0.1s ease-out;
+  /*BUTTONS*/
+  /*CONTAINERS*/
+  /*TABLES*/
+  /*IMAGES*/ }
+  * button {
+    display: inline-flex;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 0px;
+    outline: none !important;
+    margin: 5px; }
+  * button:hover {
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    cursor: pointer; }
+  * button:active {
+    -webkit-box-shadow: inset 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 12px -5px rgba(0, 0, 0, 0.75); }
+  * .submit {
+    background-color: #5269d3;
+    color: white; }
+  * .submit:hover {
+    color: #5269d3; }
+  * .warn {
+    background-color: #d25151;
+    color: white; }
+  * .warn:hover {
+    color: #d25151;
+    cursor: no-drop; }
+  * .container {
+    width: 75%; }
+  * table {
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse; }
+  * td, * th {
+    transition: background-color 0.3s ease-out 0s;
+    z-index: 0;
+    position: relative;
+    border: 1px dashed #e5e5e5;
+    padding: 15px;
+    margin: 0px; }
+  * td:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: zoom-in; }
+  * td:active {
+    /*ZOOMS IN*/
+    -webkit-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    transition: all 0.1s ease-in !important;
+    z-index: 100;
+    position: relative;
+    position: absolute;
+    padding: 30px;
+    font-size: 2em;
+    background-color: white !important; }
+  * tr:nth-child(even) {
+    background-color: #e5e5e5; }
+  * img {
+    display: inline-block;
+    width: inherit;
+    height: auto; }
+
+/*# sourceMappingURL=subtlety.css.map */
